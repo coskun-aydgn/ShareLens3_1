@@ -1,0 +1,48 @@
+@model Post
+
+<div class="detail-page-container">
+    <form asp-action="Update" method="post" enctype="multipart/form-data">
+        <!-- Gerekli Id bilgilerini gizli alan olarak gönderiyoruz -->
+        <input type="hidden" asp-for="PostId" />
+        <input type="hidden" asp-for="UserId" />
+
+        <div class="form-group">
+            <div class="detail-image-section">
+                <input type="file" id="postImage" name="postImage" class="form-control" style="display:none;"
+                    onchange="previewImage(event)" />
+
+                <label for="postImage" class="image-label">
+                    <img src="@Model.ImageUrl" alt="@Model.Title" class="detail-page-image" />
+                    <div class="image-overlay">Click to change image</div>
+                </label>
+
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="detail-post-info">
+                <span class="detail-post-date">
+                    <i class="icon calendar"></i> @Model.CreatedDate
+                </span>
+                <span class="detail-post-likes">
+                    <i class="icon heart"></i> @Model.LikeCount likes
+                </span>
+            </div>
+            <div class="detail-content-section">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+
+                <label asp-for="Description"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="detail-navigation-buttons">
+                <button type="submit" class="detail-nav-btn">Save Changes</button>
+                <a href="/Post/PostGrid" class="detail-nav-btn">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>

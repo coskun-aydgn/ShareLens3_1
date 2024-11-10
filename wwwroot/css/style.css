@@ -1,0 +1,728 @@
+/* Genel navbar stili */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1a2a3a, #2b3f57);
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #dbe2fb;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #31d7a9;
+}
+
+.login-btn {
+  background-color: #31d7a9;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #28b591;
+}
+
+/* Carousel Özelleştirme */
+.carousel {
+  position: relative;
+  margin-top: 20px;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.custom-control-prev,
+.custom-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 2;
+}
+
+.custom-control-prev {
+  left: 10px;
+}
+
+.custom-control-next {
+  right: 10px;
+}
+
+.custom-control-prev:hover,
+.custom-control-next:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.arrow {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+}
+
+.arrow.left {
+  transform: rotate(-135deg);
+}
+
+.arrow.right {
+  transform: rotate(45deg);
+}
+/* Horizontal card styling */
+.horizontal-card {
+  position: relative; /* .delete-btn bu kapsayıcıya göre konumlandırılacak */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #1a2a3a, #2b3f57);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.horizontal-card:hover {
+  transform: scale(1.02);
+}
+
+.horizontal-resim img {
+  width: 200px;
+  height: auto;
+  display: block;
+  border-radius: 15px 0 0 15px;
+}
+
+.horizontal-yazi {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Initially hide the delete button */
+.horizontal-card .delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  opacity: 0; /* Initially hide the button */
+  visibility: hidden; /* Prevent button from being clickable when hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+/* Show the delete button when hovering over the post */
+.horizontal-card:hover .delete-btn {
+  opacity: 1; /* Make the button visible */
+  visibility: visible; /* Ensure the button can be clicked */
+}
+
+/* Hover effect for delete button */
+.horizontal-card .delete-btn:hover {
+  background: #dc3545;
+  color: #ffffff;
+}
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .horizontal-card {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+  }
+
+  .horizontal-resim img {
+      width: 100%; /* Make image take full width */
+      border-radius: 15px 15px 0 0; /* Adjust border radius for vertical layout */
+  }
+}
+
+/* Grid view link styling */
+.grid-view-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Adjust this to match your theme */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.grid-view-link:hover {
+  color: #31d7a9; /* Hover color */
+}
+
+/* Grid icon styling */
+.grid-icon {
+  width: 16px; /* Icon size */
+  height: 16px;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+
+
+/* Styling for title and description */
+.horizontal-yazi h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.horizontal-yazi p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Additional information section for date and likes */
+.horizontal-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.horizontal-date, .horizontal-likes {
+  display: flex;
+  align-items: center;
+}
+
+/* General styling for icons */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Calendar icon */
+.icon.calendar {
+  border: 1px solid #31d7a9;
+  border-radius: 3px;
+  padding: 2px;
+  position: relative;
+}
+
+.icon.calendar::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 3px;
+  background-color: #31d7a9;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+/* Heart icon */
+.icon.heart {
+  border: 1px solid #d9534f;
+  background-color: #d9534f;
+  border-radius: 50%;
+  position: relative;
+}
+
+.icon.heart::before,
+.icon.heart::after {
+  content: "";
+  position: absolute;
+  background-color: #d9534f;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.icon.heart::before {
+  top: -5px;
+  left: 0;
+}
+
+.icon.heart::after {
+  top: 0;
+  left: 5px;
+  transform: rotate(-45deg);
+}
+
+/* Styling for buttons */
+.horizontal-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.details-btn, .buy-btn, .update-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.details-btn {
+  background: transparent;
+  border: 1px solid #31d7a9;
+  color: #31d7a9;
+}
+/* Update Button */
+.update-btn {
+  background: transparent;
+  border: 1px solid #ffc107; /* Sarı renk */
+  color: #ffc107;
+}
+
+.update-btn:hover {
+  background: #ffc107;
+  color: #ffffff;
+}
+/* Delete button positioned in the top-left corner with a circular background */
+
+/* Initially hide the delete button */
+.post-card .delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevent button from being clickable */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show the delete button when hovering over the grid post */
+.post-card:hover .delete-btn {
+  opacity: 1; /* Show the button */
+  visibility: visible; /* Ensure button is clickable */
+}
+
+/* Hover effect for the delete button itself */
+.post-card .delete-btn:hover {
+  background: #dc3545;
+  color: #ffffff;
+}
+
+
+
+
+
+.buy-btn {
+  background: #31d7a9;
+  color: #ffffff;
+}
+
+.details-btn:hover {
+  background: #31d7a9;
+  color: #ffffff;
+}
+
+.buy-btn:hover {
+  background: #28b591;
+}
+
+/* Container for posts */
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; /* Space between the cards */
+  margin-top: 20px;
+}
+
+/* Styling for each post card */
+.post-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Kartın genişliğini sabit tut */
+  position: relative;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+}
+
+/* Image styling with a fixed aspect ratio */
+.post-resim {
+  width: 100%;
+  height: 200px; /* Sabit bir yükseklik belirleyin */
+  overflow: hidden; /* Taşan kısımları gizleyin */
+}
+
+.post-resim img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Görüntüyü çerçeveye sığdır ve taşan kısımları kes */
+  display: block;
+}
+
+
+/* Content styling */
+.post-yazi {
+  padding: 15px;
+  flex: 1; /* İçeriği kalan alanı kaplayacak şekilde esnetir */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-yazi h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post-yazi p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Info section for date and likes */
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.post-date, .post-likes {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for buttons */
+.post-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adjust post container for consistent height */
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; /* Space between the cards */
+  margin-top: 20px;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust min width to keep the cards responsive */
+  gap: 15px; /* Reduce the gap between cards */
+  margin-top: 20px;
+  padding: 0 10px; /* Add padding for better alignment */
+}
+/* Additional adjustments */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Kartların tam yüksekliğe sahip olmasını sağlar */
+}
+
+.post-yazi {
+  flex: 1; /* İçeriğin kart boyunca uzamasını sağlar */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.post-details-btn, .post-buy-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.post-details-btn {
+  background: transparent;
+  border: 1px solid #31d7a9;
+  color: #31d7a9;
+}
+
+.post-buy-btn {
+  background: #31d7a9;
+  color: #ffffff;
+}
+
+.post-details-btn:hover {
+  background: #31d7a9;
+  color: #ffffff;
+}
+
+.post-buy-btn:hover {
+  background: #28b591;
+}
+/* Table view link styling */
+.table-view-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Adjust to fit your theme */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.table-view-link:hover {
+  color: #31d7a9; /* Hover color */
+}
+
+/* Table icon styling */
+.table-icon {
+  width: 16px; /* Icon size */
+  height: 16px;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Container for the entire detail page */
+.detail-page-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Image section styling */
+.detail-image-section {
+  margin-bottom: 20px;
+}
+
+.detail-page-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Content section styling */
+.detail-content-section {
+  padding: 20px;
+}
+
+.detail-post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.detail-post-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Post info (date and likes) */
+.detail-post-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.detail-post-date, .detail-post-likes {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Action buttons */
+.detail-action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-like-btn, .detail-comment-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.detail-like-btn {
+  background: #31d7a9;
+  color: #ffffff;
+}
+
+.detail-comment-btn {
+  background: #007bff;
+  color: #ffffff;
+}
+
+.detail-like-btn:hover {
+  background: #28b591;
+}
+
+.detail-comment-btn:hover {
+  background: #0056b3;
+}
+
+/* Navigation buttons */
+.detail-navigation-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.detail-nav-btn {
+  padding: 10px 20px;
+  background: #6c757d;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.detail-nav-btn:hover {
+  background: #343a40;
+}
+
+/* Comments section */
+.detail-comments-section {
+  margin-top: 40px;
+}
+
+.detail-comments-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.detail-comment {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detail-comment-date {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+/* Container for image with hover effect */
+.form-group .detail-image-section {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the image */
+.form-group .detail-page-image {
+  width: 100%;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay message hidden by default */
+.image-label .image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+/* Show overlay and reduce image opacity on hover */
+.detail-image-section .image-label:hover .image-overlay {
+  opacity: 1; /* Show overlay */
+}
+
+.detail-image-section .image-label:hover .form-group .detail-page-image {
+  opacity: 0.5; /* Dim the image on hover */
+}

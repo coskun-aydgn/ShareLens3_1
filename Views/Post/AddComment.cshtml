@@ -1,0 +1,44 @@
+@model Post
+
+<div class="detail-page-container">
+    <div class="detail-image-section">
+        <img src="@Model.ImageUrl" alt="@Model.Title" class="detail-page-image">
+    </div>
+    <div class="detail-content-section">
+        <h2 class="detail-post-title">@Model.Title</h2>
+        <p class="detail-post-description">@Model.Description</p>
+        <div class="detail-post-info">
+            <span class="detail-post-date">
+                <i class="icon calendar"></i> @Model.CreatedDate
+            </span>
+            <span class="detail-post-likes">
+                <i class="icon heart"></i> @Model.LikeCount likes
+            </span>
+        </div>
+        <div class="detail-action-buttons">
+            <form asp-action="AddComment" method="post">
+            <input type="hidden" name="PostId" value="@Model.PostId" />
+            <div class="form-group">
+                <textarea name="Text" placeholder="Add a comment" required class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Comment</button>
+            <a href="/Post/PostGrid" class="detail-nav-btn">Cancel</a>
+        </form>
+        </div>
+        
+    </div>
+
+    <!-- Comments section -->
+    <div class="detail-comments-section">
+        <h3>Comments</h3>
+        @foreach (var comment in Model.Comments)
+        {
+            var userComment = comment.UserComments?.FirstOrDefault(); // İlk kullanıcıyı alıyoruz
+
+            <div class="detail-comment">
+                <p><strong>@userComment?.User.UserName:</strong> @comment.Text</p>
+                <p class="detail-comment-date">@comment.CommentDate</p>
+            </div>
+        }
+    </div>
+</div>

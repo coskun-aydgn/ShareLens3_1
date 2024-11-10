@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareLens3", "ShareLens3.csproj", "{28D569D3-31AA-4970-B3E5-9A273D58DB03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28D569D3-31AA-4970-B3E5-9A273D58DB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D569D3-31AA-4970-B3E5-9A273D58DB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D569D3-31AA-4970-B3E5-9A273D58DB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D569D3-31AA-4970-B3E5-9A273D58DB03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D68CEC2-CA1A-4AC1-8D71-B4B06CC4D010}
+	EndGlobalSection
+EndGlobal

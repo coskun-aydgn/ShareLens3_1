@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ShareLens3.props" />
+</Project>

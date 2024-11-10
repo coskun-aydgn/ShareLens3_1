@@ -1,0 +1,26 @@
+@model Post
+
+<div class="detail-page-container">
+    <div class="detail-image-section">
+        <img src="@Model.ImageUrl" alt="@Model.Title" class="detail-page-image">
+    </div>
+    <div class="detail-content-section">
+        <h2 class="detail-post-title">@Model.Title</h2>
+        <p class="detail-post-description">@Model.Description</p>
+        <div class="detail-post-info">
+            <span class="detail-post-date">
+                <i class="icon calendar"></i> @Model.CreatedDate
+            </span>
+            <span class="detail-post-likes">
+                <i class="icon heart"></i> @Model.LikeCount likes
+            </span>
+        </div>
+        
+        <div class="detail-navigation-buttons">
+            <form asp-action="DeleteConfirmed" asp-route-id="@Model.PostId" method="post">
+                <button type="submit" class="detail-nav-btn">Delete</button>
+                <a asp-action="PostGrid" class="detail-nav-btn">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

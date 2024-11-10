@@ -1,0 +1,165 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\2edab164-9445-4db9-9772-b02459d79490_pexels-paultheodoroja-2446534.jpg",
+      "PackagePath": "staticwebassets\\images\\2edab164-9445-4db9-9772-b02459d79490_pexels-paultheodoroja-2446534.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\417fb469-fcf2-409f-b2c5-a87f40d29d43_pexels-paultheodoroja-2446534.jpg",
+      "PackagePath": "staticwebassets\\images\\417fb469-fcf2-409f-b2c5-a87f40d29d43_pexels-paultheodoroja-2446534.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\5d37f7a5-106d-4456-88d5-476a3949ed16_pexels-tphotography-92129.jpg",
+      "PackagePath": "staticwebassets\\images\\5d37f7a5-106d-4456-88d5-476a3949ed16_pexels-tphotography-92129.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\5e9304be-2052-48d3-aa62-00f65499c1e0_417fb469-fcf2-409f-b2c5-a87f40d29d43_pexels-paultheodoroja-2446534.jpg",
+      "PackagePath": "staticwebassets\\images\\5e9304be-2052-48d3-aa62-00f65499c1e0_417fb469-fcf2-409f-b2c5-a87f40d29d43_pexels-paultheodoroja-2446534.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\66dea7ce-85ca-43e6-ba31-337e2e823850_82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg",
+      "PackagePath": "staticwebassets\\images\\66dea7ce-85ca-43e6-ba31-337e2e823850_82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg",
+      "PackagePath": "staticwebassets\\images\\82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\87b346a0-0357-475e-8ebb-ef0c0a27c189_82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg",
+      "PackagePath": "staticwebassets\\images\\87b346a0-0357-475e-8ebb-ef0c0a27c189_82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\8dcc60ac-da06-48f5-9aa5-f56d8409b71c_82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg",
+      "PackagePath": "staticwebassets\\images\\8dcc60ac-da06-48f5-9aa5-f56d8409b71c_82e2314b-f38e-4a42-a639-021dc2fea917_pexels-tphotography-92129.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\964763b1-caf3-430f-9d5b-f3510a0d74df_417fb469-fcf2-409f-b2c5-a87f40d29d43_pexels-paultheodoroja-2446534.jpg",
+      "PackagePath": "staticwebassets\\images\\964763b1-caf3-430f-9d5b-f3510a0d74df_417fb469-fcf2-409f-b2c5-a87f40d29d43_pexels-paultheodoroja-2446534.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\carousel1.webp",
+      "PackagePath": "staticwebassets\\images\\carousel1.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\carousel2.webp",
+      "PackagePath": "staticwebassets\\images\\carousel2.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\carousel3.webp",
+      "PackagePath": "staticwebassets\\images\\carousel3.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\carousel4.webp",
+      "PackagePath": "staticwebassets\\images\\carousel4.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\carousel5.webp",
+      "PackagePath": "staticwebassets\\images\\carousel5.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\grid_icon.svg",
+      "PackagePath": "staticwebassets\\images\\grid_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img1.webp",
+      "PackagePath": "staticwebassets\\images\\img1.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img10.webp",
+      "PackagePath": "staticwebassets\\images\\img10.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img11.webp",
+      "PackagePath": "staticwebassets\\images\\img11.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img12.webp",
+      "PackagePath": "staticwebassets\\images\\img12.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img2.webp",
+      "PackagePath": "staticwebassets\\images\\img2.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img3.webp",
+      "PackagePath": "staticwebassets\\images\\img3.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img4.webp",
+      "PackagePath": "staticwebassets\\images\\img4.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img5.webp",
+      "PackagePath": "staticwebassets\\images\\img5.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img6.webp",
+      "PackagePath": "staticwebassets\\images\\img6.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img7.webp",
+      "PackagePath": "staticwebassets\\images\\img7.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img8.webp",
+      "PackagePath": "staticwebassets\\images\\img8.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\img9.webp",
+      "PackagePath": "staticwebassets\\images\\img9.webp"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\pexels-paultheodoroja-2446534.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-paultheodoroja-2446534.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\pexels-tphotography-92129.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-tphotography-92129.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\table_list_icon.svg",
+      "PackagePath": "staticwebassets\\images\\table_list_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\js\\js.js",
+      "PackagePath": "staticwebassets\\js\\js.js"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\uploaded_images\\6029a95f-6900-4686-89b0-fbe45ad7498c.jpg",
+      "PackagePath": "staticwebassets\\uploaded_images\\6029a95f-6900-4686-89b0-fbe45ad7498c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\uploaded_images\\da1d27c9-f66f-4d81-b00a-e8817fe4d978.jpg",
+      "PackagePath": "staticwebassets\\uploaded_images\\da1d27c9-f66f-4d81-b00a-e8817fe4d978.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ShareLens3.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ShareLens3.props",
+      "PackagePath": "build\\ShareLens3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ShareLens3.props",
+      "PackagePath": "buildMultiTargeting\\ShareLens3.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ShareLens3.props",
+      "PackagePath": "buildTransitive\\ShareLens3.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

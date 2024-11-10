@@ -1,0 +1,14 @@
+@model PostViewModel
+
+<h1>@Model.CurrentViewName View</h1>
+<a href="/Post/PostTable" class="table-view-link">
+    <img src="~/images/table_list_icon.svg" alt="Table view icon" class="table-icon">
+    Table View
+</a>
+
+<div class="post-container">
+    @foreach (var post in Model.Posts)
+    {
+        <partial name="_PostCardGrid" model="post" />
+      }
+</div>
