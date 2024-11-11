@@ -189,5 +189,23 @@ namespace ShareLens3.Controllers
             await _postRepository.Delete(id);
             return RedirectToAction(nameof(PostTable));
         }
+        [HttpPost]
+        public async Task<IActionResult> AddLike(int postId, string currentPage)
+        {
+            await _postRepository.AddLike(postId);
+
+            // Kullanıcının geldiği sayfaya yönlendir
+            return currentPage switch
+            {
+                "PostTable" => RedirectToAction("PostTable"),
+                "PostGrid" => RedirectToAction("PostGrid"),
+                "Details" => RedirectToAction("Details", new { id = postId }),
+                _ => RedirectToAction("PostTable")
+            };
+        }
+
+
+
+
     }
 }

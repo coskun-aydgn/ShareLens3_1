@@ -41,7 +41,7 @@ public class PostRepository : IPostRepository
         await _db.SaveChangesAsync();
         return true;
     }
-    public async Task<User> GetRandomUser()
+    public async Task<User?> GetRandomUser()
     {
         // Veritabanından kullanıcıları al ve bellekte sırala
         return (await _db.Users.ToListAsync())
@@ -49,12 +49,21 @@ public class PostRepository : IPostRepository
             .FirstOrDefault();
     }
 
-    public async Task<Comment> GetRandomComment()
+    public async Task<Comment?> GetRandomComment()
     {
         // Veritabanından yorumları al ve bellekte sırala
         return (await _db.Comments.ToListAsync())
             .OrderBy(c => Guid.NewGuid())
             .FirstOrDefault();
+    }
+     public async Task AddLike(int postId)
+    {
+        var post = await _db.Posts.FindAsync(postId);
+        if (post != null)
+        {
+            post.LikeCount++;  // Like sayısını bir artır
+            await _db.SaveChangesAsync();  // Veritabanında değişiklikleri kaydet
+        }
     }
 
 }

@@ -18,11 +18,11 @@
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
-                <a href="http://localhost:5119/">ShareLens</a>
+                <a asp-controller="Home" asp-action="Index">ShareLens</a>
             </div>
             <ul class="navbar-links">
-                <li><a href="http://localhost:5119/Post/PostTable">PostTable</a></li>
-                <li><a href="http://localhost:5119/Post/PostGrid">Grid</a></li>
+                <li><a asp-controller="Post" asp-action="PostTable">PostTable</a></li>
+                <li><a asp-controller="Post" asp-action="PostGrid">Grid</a></li>
                 <li><a asp-controller="Post" asp-action="Create">Create New Post</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#" class="login-btn">Login</a></li>

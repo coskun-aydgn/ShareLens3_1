@@ -3,7 +3,10 @@ using ShareLens3.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });;
 
 builder.Services.AddDbContext<PostDbContext>(options => {
     options.UseSqlite(
@@ -21,6 +24,8 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
     DBInit.Seed(app);
 }
+
+    
 
 app.UseStaticFiles();
 

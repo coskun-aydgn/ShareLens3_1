@@ -23,19 +23,19 @@
                 </div>
             </div>
             <div class="horizontal-buttons">
-                <form asp-action="AddLike" method="post" class="post-details-btn">
-                    <input type="hidden" name="postId" value="@Model.PostId" />
-                    <input type="hidden" name="currentPage" value="@ViewContext.RouteData.Values["action"]" />
-                    <button type="submit" class="post-details-btn">Like</button>
-                </form>
+                <form asp-action="AddLike" method="post">
+                        <input type="hidden" name="postId" value="@Model.PostId" />
+                        <input type="hidden" name="currentPage" value="@ViewContext.RouteData.Values["action"]" />
+                        <button type="submit" class="post-details-btn">Like</button>
+                    </form>
 
                 <!-- Yorum Ekleme Butonu -->
-                <a asp-controller="Post" asp-action="AddComment" asp-route-Id="@Model.PostId" class="comment-btn">
+                <a asp-controller="Post" asp-action="AddComment" asp-route-Id="@Model.PostId" style="text-decoration: none;" class="post-details-btn">
                     Comment
                 </a>
 
 
-                <a class="update-btn" asp-action="Update" asp-route-id="@Model.PostId">
+                <a class="update-btn" asp-action="Update" asp-route-id="@Model.PostId" style="text-decoration: none;">
                     Update
                 </a>
 

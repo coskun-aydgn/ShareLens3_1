@@ -9,7 +9,7 @@ public interface IPostRepository
     Task Create(Post post);
     Task Update(Post post);
     Task<bool> Delete(int id);
-
+    Task AddLike(int postId);
     Task<User?> GetRandomUser(); // Yeni metod
     Task<Comment?> GetRandomComment(); // Yeni metod
 }
