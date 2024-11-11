@@ -1,0 +1,52 @@
+2024-11-11 19:55:30.477 +01:00 [INF] User profile is available. Using 'C:\Users\cosku\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-11 19:55:30.582 +01:00 [INF] Now listening on: https://localhost:7070
+2024-11-11 19:55:30.584 +01:00 [INF] Now listening on: http://localhost:5224
+2024-11-11 19:55:30.590 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 19:55:30.591 +01:00 [INF] Hosting environment: Development
+2024-11-11 19:55:30.593 +01:00 [INF] Content root path: C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3
+2024-11-11 19:55:30.769 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/ - null null
+2024-11-11 19:55:30.783 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-11 19:55:30.791 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShareLens3.Controllers.HomeController (ShareLens3).
+2024-11-11 19:55:30.798 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-11 19:55:30.865 +01:00 [INF] Executed ViewResult - view Index executed in 64.9855ms.
+2024-11-11 19:55:30.870 +01:00 [INF] Executed action ShareLens3.Controllers.HomeController.Index (ShareLens3) in 78.1639ms
+2024-11-11 19:55:30.870 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-11 19:55:30.872 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/ - 200 null text/html; charset=utf-8 104.2144ms
+2024-11-11 19:55:30.888 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/js/bootstrap.js - null null
+2024-11-11 19:55:30.888 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/js/jquery.min.js - null null
+2024-11-11 19:55:30.888 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/images/carousel2.webp - null null
+2024-11-11 19:55:30.888 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/images/carousel1.webp - null null
+2024-11-11 19:55:30.888 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/js/js.js - null null
+2024-11-11 19:55:30.888 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/css/style.css - null null
+2024-11-11 19:55:31.013 +01:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\css\style.css'
+2024-11-11 19:55:31.014 +01:00 [INF] Sending file. Request path: '/js/js.js'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\js\js.js'
+2024-11-11 19:55:31.027 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/css/style.css - 200 14523 text/css 138.84ms
+2024-11-11 19:55:31.027 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/js/js.js - 200 1003 text/javascript 138.3797ms
+2024-11-11 19:55:31.034 +01:00 [INF] Sending file. Request path: '/js/jquery.min.js'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\js\jquery.min.js'
+2024-11-11 19:55:31.034 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/js/jquery.min.js - 200 87535 text/javascript 146.0412ms
+2024-11-11 19:55:31.036 +01:00 [INF] Sending file. Request path: '/js/bootstrap.js'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\js\bootstrap.js'
+2024-11-11 19:55:31.036 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/js/bootstrap.js - 200 149895 text/javascript 147.9529ms
+2024-11-11 19:55:31.044 +01:00 [INF] Sending file. Request path: '/images/carousel1.webp'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\images\carousel1.webp'
+2024-11-11 19:55:31.045 +01:00 [INF] Sending file. Request path: '/images/carousel2.webp'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\images\carousel2.webp'
+2024-11-11 19:55:31.045 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/images/carousel2.webp - 200 390356 image/webp 156.2474ms
+2024-11-11 19:55:31.045 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/images/carousel1.webp - 200 436118 image/webp 156.5055ms
+2024-11-11 19:55:31.054 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/images/carousel4.webp - null null
+2024-11-11 19:55:31.054 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/images/carousel3.webp - null null
+2024-11-11 19:55:31.055 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/images/carousel5.webp - null null
+2024-11-11 19:55:31.077 +01:00 [INF] Sending file. Request path: '/images/carousel3.webp'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\images\carousel3.webp'
+2024-11-11 19:55:31.078 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/images/carousel3.webp - 200 334450 image/webp 23.6318ms
+2024-11-11 19:55:31.083 +01:00 [INF] Sending file. Request path: '/images/carousel5.webp'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\images\carousel5.webp'
+2024-11-11 19:55:31.083 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/images/carousel5.webp - 200 511512 image/webp 29.325ms
+2024-11-11 19:55:31.084 +01:00 [INF] Sending file. Request path: '/images/carousel4.webp'. Physical path: 'C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3\wwwroot\images\carousel4.webp'
+2024-11-11 19:55:31.085 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/images/carousel4.webp - 200 586648 image/webp 30.4578ms
+2024-11-11 19:55:31.207 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/favicon.ico - null null
+2024-11-11 19:55:31.208 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/favicon.ico - 404 0 null 0.8673ms
+2024-11-11 19:55:31.209 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7070/favicon.ico, Response status code: 404
+2024-11-11 19:56:39.216 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/ - null null
+2024-11-11 19:56:39.220 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-11 19:56:39.222 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShareLens3.Controllers.HomeController (ShareLens3).
+2024-11-11 19:56:39.223 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-11 19:56:39.225 +01:00 [INF] Executed ViewResult - view Index executed in 2.613ms.
+2024-11-11 19:56:39.225 +01:00 [INF] Executed action ShareLens3.Controllers.HomeController.Index (ShareLens3) in 2.9509ms
+2024-11-11 19:56:39.225 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-11 19:56:39.225 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/ - 200 null text/html; charset=utf-8 8.9676ms

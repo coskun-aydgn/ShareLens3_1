@@ -1,0 +1,6 @@
+2024-11-11 19:54:50.156 +01:00 [INF] User profile is available. Using 'C:\Users\cosku\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-11 19:54:50.204 +01:00 [INF] Now listening on: http://localhost:5224
+2024-11-11 19:54:50.206 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 19:54:50.206 +01:00 [INF] Hosting environment: Development
+2024-11-11 19:54:50.207 +01:00 [INF] Content root path: C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3
+2024-11-11 19:55:21.820 +01:00 [INF] Application is shutting down...

@@ -1,0 +1,68 @@
+2024-11-11 20:56:18.391 +01:00 [INF] User profile is available. Using 'C:\Users\cosku\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-11 20:56:18.440 +01:00 [INF] Now listening on: http://localhost:5224
+2024-11-11 20:56:18.443 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-11 20:56:18.443 +01:00 [INF] Hosting environment: Development
+2024-11-11 20:56:18.444 +01:00 [INF] Content root path: C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3
+2024-11-11 20:56:35.738 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5224/Post/Create - null null
+2024-11-11 20:56:35.755 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:35.765 +01:00 [INF] Route matched with {action = "Create", controller = "Post"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:56:35.779 +01:00 [INF] Executing ViewResult, running view Create.
+2024-11-11 20:56:35.833 +01:00 [INF] Executed ViewResult - view Create executed in 55.8993ms.
+2024-11-11 20:56:35.834 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.Create (ShareLens3) in 68.6862ms
+2024-11-11 20:56:35.834 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:35.836 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5224/Post/Create - 200 null text/html; charset=utf-8 98.9373ms
+2024-11-11 20:56:40.360 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5224/Post/Create - multipart/form-data; boundary=----WebKitFormBoundary9PLIXTJ635bN6ODL 654
+2024-11-11 20:56:40.362 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:40.378 +01:00 [INF] Route matched with {action = "Create", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ShareLens3.Models.Post) on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:56:40.397 +01:00 [INF] Executing ViewResult, running view Create.
+2024-11-11 20:56:40.401 +01:00 [INF] Executed ViewResult - view Create executed in 4.5869ms.
+2024-11-11 20:56:40.402 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.Create (ShareLens3) in 23.2273ms
+2024-11-11 20:56:40.402 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:40.402 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5224/Post/Create - 200 null text/html; charset=utf-8 41.6987ms
+2024-11-11 20:56:43.922 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5224/Post/Create - multipart/form-data; boundary=----WebKitFormBoundaryWF1mPTndPll11ka4 655
+2024-11-11 20:56:43.923 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:43.923 +01:00 [INF] Route matched with {action = "Create", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ShareLens3.Models.Post) on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:56:43.927 +01:00 [INF] Executing ViewResult, running view Create.
+2024-11-11 20:56:43.928 +01:00 [INF] Executed ViewResult - view Create executed in 1.515ms.
+2024-11-11 20:56:43.928 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.Create (ShareLens3) in 4.6453ms
+2024-11-11 20:56:43.928 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:43.928 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5224/Post/Create - 200 null text/html; charset=utf-8 6.1948ms
+2024-11-11 20:56:49.424 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5224/Post/Create - multipart/form-data; boundary=----WebKitFormBoundarygr9Ty7tixnizo09c 657
+2024-11-11 20:56:49.424 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:49.424 +01:00 [INF] Route matched with {action = "Create", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ShareLens3.Models.Post) on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:56:49.651 +01:00 [INF] Executing RedirectResult, redirecting to /Post/PostTable.
+2024-11-11 20:56:49.651 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.Create (ShareLens3) in 227.3708ms
+2024-11-11 20:56:49.651 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.Create (ShareLens3)'
+2024-11-11 20:56:49.654 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5224/Post/Create - 302 0 null 230.7702ms
+2024-11-11 20:56:49.655 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5224/Post/PostTable - null null
+2024-11-11 20:56:49.655 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.PostTable (ShareLens3)'
+2024-11-11 20:56:49.656 +01:00 [INF] Route matched with {action = "PostTable", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostTable() on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:56:49.698 +01:00 [INF] Executing ViewResult, running view PostTable.
+2024-11-11 20:56:49.706 +01:00 [INF] Executed ViewResult - view PostTable executed in 8.8692ms.
+2024-11-11 20:56:49.706 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.PostTable (ShareLens3) in 50.194ms
+2024-11-11 20:56:49.706 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.PostTable (ShareLens3)'
+2024-11-11 20:56:49.707 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5224/Post/PostTable - 200 null text/html; charset=utf-8 52.1834ms
+2024-11-11 20:56:54.152 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5224/Post/Delete/10 - null null
+2024-11-11 20:56:54.152 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.Delete (ShareLens3)'
+2024-11-11 20:56:54.155 +01:00 [INF] Route matched with {action = "Delete", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:56:54.178 +01:00 [INF] Executing ViewResult, running view Delete.
+2024-11-11 20:56:54.181 +01:00 [INF] Executed ViewResult - view Delete executed in 3.6808ms.
+2024-11-11 20:56:54.181 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.Delete (ShareLens3) in 26.2117ms
+2024-11-11 20:56:54.181 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.Delete (ShareLens3)'
+2024-11-11 20:56:54.181 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5224/Post/Delete/10 - 200 null text/html; charset=utf-8 29.5317ms
+2024-11-11 20:57:03.302 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5224/Post/DeleteConfirmed/10 - application/x-www-form-urlencoded 182
+2024-11-11 20:57:03.302 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.DeleteConfirmed (ShareLens3)'
+2024-11-11 20:57:03.306 +01:00 [INF] Route matched with {action = "DeleteConfirmed", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteConfirmed(Int32) on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:57:03.333 +01:00 [INF] Executing RedirectResult, redirecting to /Post/PostTable.
+2024-11-11 20:57:03.333 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.DeleteConfirmed (ShareLens3) in 27.2431ms
+2024-11-11 20:57:03.333 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.DeleteConfirmed (ShareLens3)'
+2024-11-11 20:57:03.334 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5224/Post/DeleteConfirmed/10 - 302 0 null 31.5584ms
+2024-11-11 20:57:03.337 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5224/Post/PostTable - null null
+2024-11-11 20:57:03.337 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.PostTable (ShareLens3)'
+2024-11-11 20:57:03.337 +01:00 [INF] Route matched with {action = "PostTable", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostTable() on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-11 20:57:03.338 +01:00 [INF] Executing ViewResult, running view PostTable.
+2024-11-11 20:57:03.340 +01:00 [INF] Executed ViewResult - view PostTable executed in 1.6533ms.
+2024-11-11 20:57:03.340 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.PostTable (ShareLens3) in 2.8547ms
+2024-11-11 20:57:03.340 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.PostTable (ShareLens3)'
+2024-11-11 20:57:03.340 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5224/Post/PostTable - 200 null text/html; charset=utf-8 3.1824ms
+2024-11-11 20:58:17.061 +01:00 [INF] Application is shutting down...

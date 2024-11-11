@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShareLens3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+916c810c7bde27d08aea055a4706b11f40ce8e9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64dbb4c180b9e87d1cd59dda1c3a6fc7daa5b64c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShareLens3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShareLens3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

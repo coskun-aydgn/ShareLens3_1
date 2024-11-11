@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jlGazCcH/OaPKqWU49xS282HLAGUKuCjOSUzrlbg8Kg=",
+  "Hash": "6GCD6fiPbbGbo7I1DBRTrQarJS+E/MzmmelEnIGGZcY=",
   "Source": "ShareLens3",
   "BasePath": "_content/ShareLens3",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2edab164-9445-4db9-9772-b02459d79490_pexels-paultheodoroja-2446534.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\361595b4-036c-4c58-ac45-9a592e483c07_img11.webp",
+      "SourceId": "ShareLens3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\",
+      "BasePath": "_content/ShareLens3",
+      "RelativePath": "images/361595b4-036c-4c58-ac45-9a592e483c07_img11.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\361595b4-036c-4c58-ac45-9a592e483c07_img11.webp"
     },
     {
       "Identity": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\wwwroot\\images\\417fb469-fcf2-409f-b2c5-a87f40d29d43_pexels-paultheodoroja-2446534.jpg",
