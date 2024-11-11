@@ -3,6 +3,8 @@ using ShareLens3.DAL;
 using ShareLens3.Models;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace ShareLens3.Controllers
 {

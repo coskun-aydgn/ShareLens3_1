@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShareLens3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64dbb4c180b9e87d1cd59dda1c3a6fc7daa5b64c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+999aa6dfc5d27340f40dfd712bcc3b6ba4d8abea")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShareLens3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShareLens3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

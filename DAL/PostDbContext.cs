@@ -1,8 +1,9 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ShareLens3.Models;
 
 namespace ShareLens3.DAL;
-public class PostDbContext : DbContext
+public class PostDbContext : IdentityDbContext<User>
 {
 	public PostDbContext(DbContextOptions<PostDbContext> options) : base(options)
 	{

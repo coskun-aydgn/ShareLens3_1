@@ -1,9 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using ShareLens3.DAL;
+using ShareLens3.Models;
 using Serilog;
 using Serilog.Events;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("PostDbContextConnection") ?? throw new InvalidOperationException("Connection string 'PostDbContextConnection' not found.");
 
 builder.Services.AddControllersWithViews().AddJsonOptions(options =>
     {
@@ -15,6 +18,8 @@ builder.Services.AddDbContext<PostDbContext>(options => {
         builder.Configuration["ConnectionStrings:PostDbContextConnection"]);
 });
 
+builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<PostDbContext>();
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
@@ -40,6 +45,7 @@ if (app.Environment.IsDevelopment())
     
 
 app.UseStaticFiles();
+app.UseAuthentication();
 
 app.MapDefaultControllerRoute();
 
