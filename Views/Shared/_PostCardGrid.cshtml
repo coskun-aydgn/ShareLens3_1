@@ -35,10 +35,10 @@
                     </form>
 
                     <!-- Yorum Ekleme Butonu -->
-                    <a asp-controller="Post" asp-action="AddComment" asp-route-Id="@Model.PostId"
-                        class="post-details-btn" style="text-decoration: none;">
-                        Comment
-                    </a>
+                    <a asp-controller="Comment" asp-action="AddComment" asp-route-id="@Model.PostId"
+                class="post-details-btn" style="text-decoration: none;">
+                Comment
+            </a>
                     <a class="update-btn" asp-action="Update" asp-route-id="@Model.PostId"
                         style="text-decoration: none;">
                         Update

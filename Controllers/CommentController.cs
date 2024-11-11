@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ShareLens3.DAL;
 using ShareLens3.Models;
+using System.Threading.Tasks;
 
 namespace ShareLens3.Controllers
 {
@@ -13,20 +14,6 @@ namespace ShareLens3.Controllers
             _commentRepository = commentRepository;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> AddLike(int postId, string currentPage)
-        {
-            await _commentRepository.AddLike(postId);
-
-            return currentPage switch
-            {
-                "PostTable" => RedirectToAction("PostTable", "Post"),
-                "PostGrid" => RedirectToAction("PostGrid", "Post"),
-                "Details" => RedirectToAction("Details", "Post", new { id = postId }),
-                _ => RedirectToAction("PostTable", "Post")
-            };
-        }
-
         [HttpGet]
         public async Task<IActionResult> AddComment(int id)
         {
@@ -35,13 +22,24 @@ namespace ShareLens3.Controllers
             {
                 return NotFound();
             }
-            return View(post);
+
+            ViewData["PostId"] = id;
+            ViewData["Users"] = await _commentRepository.GetAllUsers(); // Kullanıcıları ViewData ile gönderiyoruz
+
+            return View("/Views/Post/AddComment.cshtml");
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddComment(int postId, string text)
+        public async Task<IActionResult> AddComment(int postId, int userId, string text)
         {
-            await _commentRepository.AddComment(postId, text);
+            if (postId == 0 || userId == 0 || string.IsNullOrWhiteSpace(text))
+            {
+                ModelState.AddModelError("", "All fields are required.");
+                ViewData["Users"] = await _commentRepository.GetAllUsers();
+                return View();
+            }
+
+            await _commentRepository.AddComment(postId, userId, text);
             return RedirectToAction("Details", "Post", new { id = postId });
         }
     }
