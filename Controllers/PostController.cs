@@ -86,11 +86,11 @@ namespace ShareLens3.Controllers
                 post.CreatedDate = DateTime.Now.ToString("dd.MM.yyyy");
                 post.LikeCount = 0;
 
-                // Randomly assign a user and comment
+                // Randomly assign a user
                 var randomUser = await _postRepository.GetRandomUser();
                 if (randomUser != null)
                 {
-                    post.UserPosts = new List<UserPost> { new UserPost { UserId = randomUser.UserId } };
+                    post.UserPosts = new List<UserPost> { new UserPost { UserId = randomUser.Id } };
                 }
 
                 var randomComment = await _postRepository.GetRandomComment();
@@ -102,7 +102,7 @@ namespace ShareLens3.Controllers
                         {
                             Text = randomComment.Text,
                             CommentDate = DateTime.Now.ToString("dd.MM.yyyy"),
-                            UserComments = new List<UserComment> { new UserComment { UserId = randomUser?.UserId ?? 1 } }
+                            UserComments = new List<UserComment> { new UserComment { UserId = randomUser?.Id ?? "" } }
                         }
                     };
                 }

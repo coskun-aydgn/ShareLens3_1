@@ -26,14 +26,17 @@
                 <li><a asp-controller="Post" asp-action="Create">Create New Post</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#" class="login-btn">Login</a></li>
+                <partial name="_LoginPartial"/>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+          
+    </main>
+</div>
+    @await  RenderSectionAsync("Scripts", required:false)
 </body>
 
 </html>

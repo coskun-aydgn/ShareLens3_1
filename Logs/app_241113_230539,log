@@ -1,0 +1,37 @@
+2024-11-13 23:05:40.955 +01:00 [INF] User profile is available. Using 'C:\Users\cosku\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-13 23:05:41.029 +01:00 [INF] Now listening on: https://localhost:7070
+2024-11-13 23:05:41.029 +01:00 [INF] Now listening on: http://localhost:5224
+2024-11-13 23:05:41.033 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 23:05:41.033 +01:00 [INF] Hosting environment: Development
+2024-11-13 23:05:41.033 +01:00 [INF] Content root path: C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3_1
+2024-11-13 23:05:41.569 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/ - null null
+2024-11-13 23:05:41.619 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 23:05:41.632 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShareLens3.Controllers.HomeController (ShareLens3).
+2024-11-13 23:05:41.643 +01:00 [INF] Executing action method ShareLens3.Controllers.HomeController.Index (ShareLens3) - Validation state: "Valid"
+2024-11-13 23:05:41.648 +01:00 [INF] Executed action method ShareLens3.Controllers.HomeController.Index (ShareLens3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4352ms.
+2024-11-13 23:05:41.663 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-13 23:05:41.758 +01:00 [INF] Executed ViewResult - view Index executed in 100.0349ms.
+2024-11-13 23:05:41.759 +01:00 [INF] Executed action ShareLens3.Controllers.HomeController.Index (ShareLens3) in 126.2463ms
+2024-11-13 23:05:41.759 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 23:05:41.763 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/ - 200 null text/html; charset=utf-8 196.3078ms
+2024-11-13 23:05:45.197 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/?area=Identity&page=%2FAccount%2FRegister - null null
+2024-11-13 23:05:45.199 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 23:05:45.200 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShareLens3.Controllers.HomeController (ShareLens3).
+2024-11-13 23:05:45.201 +01:00 [INF] Executing action method ShareLens3.Controllers.HomeController.Index (ShareLens3) - Validation state: "Valid"
+2024-11-13 23:05:45.202 +01:00 [INF] Executed action method ShareLens3.Controllers.HomeController.Index (ShareLens3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0968ms.
+2024-11-13 23:05:45.203 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-13 23:05:45.226 +01:00 [INF] Executed ViewResult - view Index executed in 23.9999ms.
+2024-11-13 23:05:45.226 +01:00 [INF] Executed action ShareLens3.Controllers.HomeController.Index (ShareLens3) in 26.2239ms
+2024-11-13 23:05:45.226 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 23:05:45.227 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/?area=Identity&page=%2FAccount%2FRegister - 200 null text/html; charset=utf-8 29.7376ms
+2024-11-13 23:05:51.613 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/?area=Identity&page=%2FAccount%2FLogin - null null
+2024-11-13 23:05:51.616 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 23:05:51.616 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShareLens3.Controllers.HomeController (ShareLens3).
+2024-11-13 23:05:51.616 +01:00 [INF] Executing action method ShareLens3.Controllers.HomeController.Index (ShareLens3) - Validation state: "Valid"
+2024-11-13 23:05:51.617 +01:00 [INF] Executed action method ShareLens3.Controllers.HomeController.Index (ShareLens3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0236ms.
+2024-11-13 23:05:51.617 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-13 23:05:51.631 +01:00 [INF] Executed ViewResult - view Index executed in 13.5113ms.
+2024-11-13 23:05:51.631 +01:00 [INF] Executed action ShareLens3.Controllers.HomeController.Index (ShareLens3) in 14.7145ms
+2024-11-13 23:05:51.631 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 23:05:51.631 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/?area=Identity&page=%2FAccount%2FLogin - 200 null text/html; charset=utf-8 18.737ms
+2024-11-13 23:08:00.471 +01:00 [INF] Application is shutting down...

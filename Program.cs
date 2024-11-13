@@ -18,7 +18,7 @@ builder.Services.AddDbContext<PostDbContext>(options => {
         builder.Configuration["ConnectionStrings:PostDbContextConnection"]);
 });
 
-builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<PostDbContext>();
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 
@@ -35,11 +35,19 @@ var logger=loggerConfiguration.CreateLogger();
 builder.Logging.AddSerilog(logger);
 
 var app = builder.Build();
+/*using (var service = app.Services.CreateScope())
+{
+    var db = service.ServiceProvider.GetRequiredService<PostDbContext>();
+    var um = service.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    var rm = service.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    ApplicationDbInitializer.InitializeAsync(db,um,rm);
+}*/
 
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
-    DBInit.Seed(app);
+   // DBInit.Seed(app);
 }
 
     
@@ -47,11 +55,16 @@ if (app.Environment.IsDevelopment())
 app.UseStaticFiles();
 app.UseAuthentication();
 
-app.MapDefaultControllerRoute();
+//app.MapDefaultControllerRoute();
 
-// app.MapControllerRoute(
-//     name: "default",
-//     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();
 

@@ -1,15 +1,15 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using ShareLens3.Models;
-
 
 namespace ShareLens3.DAL
 {
     public class CommentRepository : ICommentRepository
     {
         private readonly PostDbContext _db;
-        private readonly ILogger<PostRepository> _logger;
+        private readonly ILogger<CommentRepository> _logger;
 
-        public CommentRepository(PostDbContext db, ILogger<PostRepository> logger)
+        public CommentRepository(PostDbContext db, ILogger<CommentRepository> logger)
         {
             _db = db;
             _logger = logger;
@@ -20,11 +20,11 @@ namespace ShareLens3.DAL
             return await _db.Posts
                 .Include(p => p.Comments)
                 .ThenInclude(c => c.UserComments)
-                .ThenInclude(uc => uc.User)
+                .ThenInclude(uc => uc.User) // Ensure this is compatible with IdentityUser
                 .FirstOrDefaultAsync(p => p.PostId == postId);
         }
 
-        public async Task<bool> AddComment(int postId, int userId, string text)
+        public async Task<bool> AddComment(int postId, string userId, string text)
         {
             try
             {
@@ -34,9 +34,9 @@ namespace ShareLens3.DAL
                     CommentDate = DateTime.Now.ToString("dd.MM.yyyy"),
                     PostId = postId,
                     UserComments = new List<UserComment>
-                {
-                    new UserComment { UserId = userId }
-                }
+                    {
+                        new UserComment { UserId = userId } // Use string type for IdentityUser Id
+                    }
                 };
 
                 _db.Comments.Add(newComment);
@@ -45,13 +45,12 @@ namespace ShareLens3.DAL
             }
             catch (Exception e)
             {
-
-                _logger.LogError("[CommentRepository] items Add() failed when AddComment(), error message:{e}", e.Message);
+                _logger.LogError("[CommentRepository] AddComment() failed with error: {Error}", e.Message);
                 return false;
             }
         }
 
-        public async Task<IEnumerable<User>> GetAllUsers()
+        public async Task<IEnumerable<IdentityUser>> GetAllUsers()
         {
             try
             {
@@ -59,10 +58,9 @@ namespace ShareLens3.DAL
             }
             catch (Exception e)
             {
-                _logger.LogError("[CommentRepository] posts ToListAsync() failed when GetAllUsers(), error message:{e}", e.Message);
+                _logger.LogError("[CommentRepository] GetAllUsers() failed with error: {Error}", e.Message);
                 return null;
             }
-            
         }
 
         public async Task<bool> SaveChanges()
@@ -74,10 +72,9 @@ namespace ShareLens3.DAL
             }
             catch (Exception e)
             {
-               _logger.LogError("[CommentRepository] posts SaveChangesAsync() failed when SaveChanges(), error message:{e}", e.Message);
+                _logger.LogError("[CommentRepository] SaveChanges() failed with error: {Error}", e.Message);
                 return false;
             }
-            
         }
     }
 }

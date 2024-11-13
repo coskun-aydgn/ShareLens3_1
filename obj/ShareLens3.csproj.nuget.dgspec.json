@@ -1,18 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\ShareLens3.csproj": {}
+    "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3_1\\ShareLens3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\ShareLens3.csproj": {
+    "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3_1\\ShareLens3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\ShareLens3.csproj",
+        "projectUniqueName": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3_1\\ShareLens3.csproj",
         "projectName": "ShareLens3",
-        "projectPath": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\ShareLens3.csproj",
+        "projectPath": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3_1\\ShareLens3.csproj",
         "packagesPath": "C:\\Users\\cosku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3\\obj\\",
+        "outputPath": "C:\\Users\\cosku\\Desktop\\Oslomet Emner\\ITPE3200-1 24H Webapplikasjoner\\Vs code Repository\\ShareLens5\\ShareLens3_1\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\cosku\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
@@ -49,35 +50,35 @@
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[9.0.0, )"
             },
             "Serilog.Extensions.Logging": {
               "target": "Package",

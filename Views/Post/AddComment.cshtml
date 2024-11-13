@@ -1,3 +1,4 @@
+@using Microsoft.AspNetCore.Identity
 @{
     ViewData["Title"] = "Add Comment";
 }
@@ -11,9 +12,9 @@
         <label for="userId">Select User</label>
         <select name="userId" class="form-control" required>
             <option value="">Select a user</option>
-            @foreach (var user in (IEnumerable<ShareLens3.Models.User>)ViewData["Users"])
+            @foreach (var user in (IEnumerable<IdentityUser>)ViewData["Users"])
             {
-                <option value="@user.UserId">@user.UserName</option>
+                <option value="@user.Id">@user.UserName</option>
             }
         </select>
     </div>

@@ -1,4 +1,5 @@
 using ShareLens3.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace ShareLens3.DAL;
 
@@ -10,6 +11,6 @@ public interface IPostRepository
     Task<bool> Update(Post post);
     Task<bool> Delete(int id);
     Task<bool> AddLike(int postId);
-    Task<User?> GetRandomUser(); // Yeni metod
-    Task<Comment?> GetRandomComment(); // Yeni metod
+    Task<IdentityUser?> GetRandomUser(); // Updated to use IdentityUser
+    Task<Comment?> GetRandomComment();
 }

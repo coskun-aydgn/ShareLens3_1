@@ -1,0 +1,70 @@
+2024-11-13 22:39:25.513 +01:00 [INF] User profile is available. Using 'C:\Users\cosku\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-13 22:39:25.589 +01:00 [INF] Now listening on: https://localhost:7070
+2024-11-13 22:39:25.589 +01:00 [INF] Now listening on: http://localhost:5224
+2024-11-13 22:39:25.593 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 22:39:25.593 +01:00 [INF] Hosting environment: Development
+2024-11-13 22:39:25.594 +01:00 [INF] Content root path: C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3_1
+2024-11-13 22:39:25.944 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/ - null null
+2024-11-13 22:39:25.972 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 22:39:25.998 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ShareLens3.Controllers.HomeController (ShareLens3).
+2024-11-13 22:39:26.008 +01:00 [INF] Executing action method ShareLens3.Controllers.HomeController.Index (ShareLens3) - Validation state: "Valid"
+2024-11-13 22:39:26.013 +01:00 [INF] Executed action method ShareLens3.Controllers.HomeController.Index (ShareLens3), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2986ms.
+2024-11-13 22:39:26.032 +01:00 [INF] Executing ViewResult, running view Index.
+2024-11-13 22:39:26.096 +01:00 [INF] Executed ViewResult - view Index executed in 66.2857ms.
+2024-11-13 22:39:26.096 +01:00 [INF] Executed action ShareLens3.Controllers.HomeController.Index (ShareLens3) in 98.3264ms
+2024-11-13 22:39:26.097 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.HomeController.Index (ShareLens3)'
+2024-11-13 22:39:26.101 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/ - 200 null text/html; charset=utf-8 159.8013ms
+2024-11-13 22:39:29.063 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7070/Post/PostGrid - null null
+2024-11-13 22:39:29.068 +01:00 [INF] Executing endpoint 'ShareLens3.Controllers.PostController.PostGrid (ShareLens3)'
+2024-11-13 22:39:29.078 +01:00 [INF] Route matched with {action = "PostGrid", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostGrid() on controller ShareLens3.Controllers.PostController (ShareLens3).
+2024-11-13 22:39:29.081 +01:00 [INF] Executed action ShareLens3.Controllers.PostController.PostGrid (ShareLens3) in 2.1915ms
+2024-11-13 22:39:29.081 +01:00 [INF] Executed endpoint 'ShareLens3.Controllers.PostController.PostGrid (ShareLens3)'
+2024-11-13 22:39:29.133 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Method 'get_LockReleaseBehavior' in type 'Microsoft.EntityFrameworkCore.Sqlite.Migrations.Internal.SqliteHistoryRepository' from assembly 'Microsoft.EntityFrameworkCore.Sqlite, Version=8.0.10.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' does not have an implementation.
+   at Microsoft.Extensions.DependencyInjection.SqliteServiceCollectionExtensions.AddEntityFrameworkSqlite(IServiceCollection serviceCollection)
+   at Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal.SqliteOptionsExtension.ApplyServices(IServiceCollection services)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.ApplyServices(IDbContextOptions options, ServiceCollection services)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.<GetOrAdd>g__BuildServiceProvider|4_1(IDbContextOptions _, ValueTuple`2 arguments)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.<>c.<GetOrAdd>b__4_0(IDbContextOptions contextOptions, ValueTuple`2 tuples)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at Microsoft.EntityFrameworkCore.Internal.ServiceProviderCache.GetOrAdd(IDbContextOptions options, Boolean providerRequired)
+   at Microsoft.EntityFrameworkCore.DbContext..ctor(DbContextOptions options)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext`5..ctor(DbContextOptions options)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`8..ctor(DbContextOptions options)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`3..ctor(DbContextOptions options)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext`1..ctor(DbContextOptions options)
+   at ShareLens3.DAL.PostDbContext..ctor(DbContextOptions`1 options) in C:\Users\cosku\Desktop\Oslomet Emner\ITPE3200-1 24H Webapplikasjoner\Vs code Repository\ShareLens5\ShareLens3_1\DAL\PostDbContext.cs:line 10
+   at InvokeStub_PostDbContext..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method27(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-13 22:39:29.180 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7070/Post/PostGrid - 500 null text/html; charset=utf-8 117.5315ms
+2024-11-13 22:44:31.045 +01:00 [INF] Application is shutting down...
